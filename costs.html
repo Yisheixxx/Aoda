@@ -12,7 +12,6 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://odehorg.org/costs.html">
     <link rel="icon" type="image/png" href="images/logo-icon.png">
-    <script src="https://cdn.cardknox.com/ifields/2.9.2109.2701/ifields.min.js"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Noto+Sans+Hebrew:wght@400;700&family=Michroma&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -160,26 +159,28 @@
                                     <h2 class="text-2xl font-bold text-slate-900 dark:text-white uppercase">Future Needs</h2>
                                 </div>
                                 <ul class="space-y-6">
-                                    <!-- NOTE: Replace sample items and amounts with the final list from Rabbi Meisels -->
                                     <li class="flex items-start gap-4">
                                         <span class="material-icons text-secondary mt-1">check_circle</span>
-                                        <div>
+                                        <div class="flex-grow">
                                             <span class="font-bold block text-slate-900 dark:text-white text-lg">$180 – Sponsor medical guidance call</span>
-                                            <p class="text-slate-600 dark:text-slate-400">Helps fund expert guidance for a patient and family facing urgent transplant decisions.</p>
+                                            <p class="text-slate-600 dark:text-slate-400 mb-3">Helps fund expert guidance for a patient and family facing urgent transplant decisions.</p>
+                                            
                                         </div>
                                     </li>
                                     <li class="flex items-start gap-4">
                                         <span class="material-icons text-secondary mt-1">check_circle</span>
-                                        <div>
+                                        <div class="flex-grow">
                                             <span class="font-bold block text-slate-900 dark:text-white text-lg">$360 – Support donor testing</span>
-                                            <p class="text-slate-600 dark:text-slate-400">Helps cover advanced donor matching and high-sensitivity testing.</p>
+                                            <p class="text-slate-600 dark:text-slate-400 mb-3">Helps cover advanced donor matching and high-sensitivity testing.</p>
+                                            
                                         </div>
                                     </li>
                                     <li class="flex items-start gap-4">
                                         <span class="material-icons text-secondary mt-1">check_circle</span>
-                                        <div>
+                                        <div class="flex-grow">
                                             <span class="font-bold block text-slate-900 dark:text-white text-lg">$1,000 – Assist a family through transplant</span>
-                                            <p class="text-slate-600 dark:text-slate-400">Supports case management, advocacy, and emotional support throughout a transplant journey.</p>
+                                            <p class="text-slate-600 dark:text-slate-400 mb-3">Supports case management, advocacy, and emotional support throughout a transplant journey.</p>
+                                            
                                         </div>
                                     </li>
                                 </ul>
@@ -193,79 +194,16 @@
                                         <h3 class="text-2xl font-bold uppercase">Donate Now</h3>
                                         <p class="text-white text-sm opacity-90">Support the mission of Organ Connections.</p>
                                     </div>
-                                    <div class="p-8 space-y-6">
-                                        <!-- Donation Amount Selection -->
-                                        <div>
-                                            <label class="block text-sm font-semibold mb-2 text-slate-700 dark:text-slate-300">Donation Amount ($)</label>
-                                            <div class="grid grid-cols-3 gap-3 mb-4">
-                                                <button type="button" onclick="setAmount(18)" class="amount-btn py-2 px-4 border-2 border-slate-200 dark:border-slate-700 rounded-xl hover:border-primary hover:text-primary transition-all font-bold dark:text-white">$18</button>
-                                                <button type="button" onclick="setAmount(101)" class="amount-btn py-2 px-4 border-2 border-slate-200 dark:border-slate-700 rounded-xl hover:border-primary hover:text-primary transition-all font-bold dark:text-white">$101</button>
-                                                <button type="button" onclick="setAmount(360)" class="amount-btn py-2 px-4 border-2 border-slate-200 dark:border-slate-700 rounded-xl hover:border-primary hover:text-primary transition-all font-bold dark:text-white">$360</button>
-                                            </div>
-                                            <div class="relative">
-                                                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">$</span>
-                                                <input id="donation-amount" class="w-full pl-8 pr-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-primary dark:text-white" placeholder="Other amount" type="number" min="1" step="0.01" value="18">
-                                            </div>
-                                        </div>
-
-                                        <!-- Cardknox iFields Payment Form -->
-                                        <form id="payment-form" method="POST" class="space-y-4">
-                                            <div>
-                                                <label class="block text-sm font-semibold mb-2 text-slate-700 dark:text-slate-300">Cardholder Name <span class="text-red-500">*</span></label>
-                                                <input id="cardholder-name" name="xName" required class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-3 focus:ring-2 focus:ring-primary outline-none dark:text-white" placeholder="Full name on card" autocomplete="cc-name" />
-                                            </div>
-
-                                            <div>
-                                                <label class="block text-sm font-semibold mb-2 text-slate-700 dark:text-slate-300">Card Number <span class="text-red-500">*</span></label>
-                                                <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-900">
-                                                    <iframe 
-                                                        data-ifields-id="card-number" 
-                                                        data-ifields-placeholder="Card Number" 
-                                                        src="https://cdn.cardknox.com/ifields/2.15.2401.3101/ifield.htm"
-                                                        style="width: 100%; height: 50px; border: none;"
-                                                        title="Card Number">
-                                                    </iframe>
-                                                </div>
-                                                <input data-ifields-id="card-number-token" name="xCardNum" type="hidden" />
-                                            </div>
-
-                                            <div class="grid grid-cols-2 gap-4">
-                                                <div>
-                                                    <label class="block text-sm font-semibold mb-2 text-slate-700 dark:text-slate-300">Expiration <span class="text-red-500">*</span></label>
-                                                    <div class="grid grid-cols-2 gap-2">
-                                                        <div>
-                                                            <input id="exp-month" name="xMonth" required type="text" maxlength="2" placeholder="MM" autocomplete="cc-exp-month" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-3 focus:ring-2 focus:ring-primary outline-none dark:text-white text-center" />
-                                                        </div>
-                                                        <div>
-                                                            <input id="exp-year" name="xYear" required type="text" maxlength="4" placeholder="YYYY" autocomplete="cc-exp-year" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-3 focus:ring-2 focus:ring-primary outline-none dark:text-white text-center" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <label class="block text-sm font-semibold mb-2 text-slate-700 dark:text-slate-300">CVV <span class="text-red-500">*</span></label>
-                                                    <div class="border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-900">
-                                                        <iframe 
-                                                            data-ifields-id="cvv" 
-                                                            data-ifields-placeholder="CVV" 
-                                                            src="https://cdn.cardknox.com/ifields/2.15.2401.3101/ifield.htm"
-                                                            style="width: 100%; height: 50px; border: none;"
-                                                            title="CVV">
-                                                        </iframe>
-                                                    </div>
-                                                    <input data-ifields-id="cvv-token" name="xCVV" type="hidden" />
-                                                </div>
-                                            </div>
-
-                                            <!-- Error/Success Messages -->
-                                            <div id="payment-message" class="hidden p-4 rounded-xl text-sm"></div>
-                                            <label data-ifields-id="card-data-error" class="block text-sm text-red-600 dark:text-red-400"></label>
-
-                                            <button id="submit-donation-btn" type="submit" disabled class="w-full bg-primary hover:opacity-90 text-white font-bold py-3 px-8 rounded-xl transition-all shadow-lg uppercase opacity-50 cursor-not-allowed" style="box-shadow: 0 10px 15px -3px rgba(123, 165, 215, 0.3);">
-                                                Process Donation
-                                            </button>
-                                        </form>
-
-                                        <p class="text-[10px] text-center text-slate-500 uppercase tracking-tighter">
+                                    <div >
+                                        <!-- Cardknox iframe -->
+                                        <iframe 
+                                            id="donation-iframe"
+                                            src="https://secure.cardknox.com/gizberodeh" 
+                                            style="width: 100%; height: 600px; border: none; padding: 24px; border-radius: 14px;"
+                                            title="Donation Form">
+                                        </iframe>
+                                        
+                                        <p class="text-[10px] text-center text-slate-500 uppercase tracking-tighter mt-4">
                                             SECURE 256-BIT SSL ENCRYPTED PAYMENT BY CARDKNOX
                                         </p>
                                     </div>
@@ -358,7 +296,32 @@
         </footer>
     </div>
 
-    <script src="js/app.js"></script>
-    <script src="js/cardknox.js"></script>
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+        }
+
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.add('hidden');
+            icon.textContent = 'menu';
+        }
+
+        // Update donation amount in iframe
+        function updateDonationAmount(amount) {
+            const iframe = document.getElementById('donation-iframe');
+            iframe.src = `https://secure.cardknox.com/gizberodeh?xamount=${amount}`;
+            
+            // Scroll to iframe on mobile
+            if (window.innerWidth < 1024) {
+                iframe.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    </script>
 </body>
 </html>
