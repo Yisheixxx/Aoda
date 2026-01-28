@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://odehorg.org/sitemap.xml
+

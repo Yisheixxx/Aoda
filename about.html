@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | ODEH</title>
+    <meta name="description" content="Learn about ODEH’s mission, history, and unique medical and halachic approach to helping patients with complex disease, organ failure, and transplantation.">
+    <link rel="canonical" href="https://odehorg.org/about.html">
+    <meta property="og:site_name" content="ODEH">
+    <meta property="og:title" content="About ODEH">
+    <meta property="og:description" content="Learn about ODEH’s mission, history, and unique medical and halachic approach to helping patients with complex disease, organ failure, and transplantation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://odehorg.org/about.html">
+    <link rel="icon" type="image/png" href="images/logo-icon.png">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Noto+Sans+Hebrew:wght@400;700&family=Michroma&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#7ba5d7",
+                        secondary: "#f27172",
+                        accent: "#7ba5d7",
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        serif: ["Inter", "sans-serif"],
+                        hebrew: ["Noto Sans Hebrew", "sans-serif"],
+                        logo: ["Inter", "sans-serif"],
+                        brand: ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hebrew-text { font-family: 'Noto Sans Hebrew', sans-serif; font-weight: 700; }
+        .logo-font { font-family: 'Inter', sans-serif; font-weight: 900; letter-spacing: 0.05em; }
+        .brand-primary { color: #7ba5d7; }
+        .brand-secondary { color: #f27172; }
+        .glass-effect { backdrop-filter: blur(12px); background-color: rgba(255, 255, 255, 0.8); }
+        .dark .glass-effect { background-color: rgba(15, 23, 42, 0.8); }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <nav class="sticky top-0 z-50 glass-effect border-b border-slate-200 dark:border-slate-800 transition-all" id="header">
+            <div class="w-full px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="images/logo.png" alt="ODEH - Organ & Donor Extensive Help" class="h-12 dark:brightness-0 dark:invert" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="flex flex-col hidden">
+                            <div class="flex items-center gap-2">
+                                <span class="hebrew-text text-2xl font-black leading-none dark:text-white">אודה</span>
+                                <span class="logo-font text-2xl font-black leading-none dark:text-white">ODEH</span>
+                            </div>
+                            <span class="text-[10px] uppercase tracking-[0.15em] brand-primary font-semibold">ORGAN CONNECTIONS</span>
+                        </div>
+                    </a>
+
+                    <div class="hidden lg:flex items-center space-x-6 text-sm font-semibold uppercase tracking-wider">
+                        <a href="index.html" class="nav-link transition-colors hover:text-primary text-slate-600 dark:text-slate-300">Home</a>
+                        <a href="about.html" class="nav-link transition-colors hover:text-primary text-primary border-b-2 border-primary pb-1">About Us</a>
+                        <a href="specialties.html" class="nav-link transition-colors hover:text-primary text-slate-600 dark:text-slate-300">Specialties</a>
+                        <a href="success.html" class="nav-link transition-colors hover:text-primary text-slate-600 dark:text-slate-300">Success Stories</a>
+                        <a href="costs.html" class="nav-link transition-colors hover:text-primary text-slate-600 dark:text-slate-300">Donate</a>
+                        <a href="become-living-donor.html" class="nav-link transition-colors hover:text-primary text-slate-600 dark:text-slate-300">Become a Living Donor</a>
+                        <a href="schedule-donor-drive.html" class="nav-link transition-colors hover:text-primary text-slate-600 dark:text-slate-300">Schedule a Donor Drive</a>
+                        <a href="become-involved.html" class="nav-link transition-colors hover:text-primary text-slate-600 dark:text-slate-300">Become Involved</a>
+                        <div class="flex items-center gap-4 ml-4 pl-4 border-l border-slate-200 dark:border-slate-700">
+                            <a href="contact.html" class="bg-primary hover:opacity-90 text-white px-5 py-2.5 rounded-full transition-all shadow-lg" style="box-shadow: 0 10px 15px -3px rgba(123, 165, 215, 0.3);">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <button class="lg:hidden p-2 text-slate-600 dark:text-slate-300" onclick="toggleMobileMenu()">
+                        <span class="material-icons" id="menu-icon">menu</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Medical Guidance Stripe -->
+            <div class="bg-secondary text-white text-xs sm:text-sm text-center py-2 px-4">
+                <span class="font-semibold tracking-widest uppercase">Medical Guidance</span>
+                <span class="mx-2">|</span>
+                <span>Call <a href="tel:18456660334" class="underline font-semibold">845-666-ODEH (6334)</a></span>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="lg:hidden hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 p-4 space-y-4" id="mobile-menu">
+                <a href="index.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">Home</a>
+                <a href="about.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">About Us</a>
+                <a href="specialties.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">Specialties</a>
+                <a href="success.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">Success Stories</a>
+                <a href="costs.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">Donate</a>
+                <a href="become-living-donor.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">Become a Living Donor</a>
+                <a href="schedule-donor-drive.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">Schedule a Donor Drive</a>
+                <a href="become-involved.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">Become Involved</a>
+                <div class="pt-4 border-t border-slate-100 dark:border-slate-800 flex justify-between items-center">
+                    <a href="contact.html" class="bg-primary text-white px-6 py-2 rounded-full w-full text-center">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="flex-grow">
+            <div class="animate-in slide-in-from-bottom duration-700">
+                <section class="relative py-24 md:py-32 overflow-hidden bg-blue-50 dark:bg-slate-900/50">
+                    <div class="container mx-auto px-6 relative z-10 text-center">
+                        <div class="mb-8 flex justify-center">
+                            <span class="material-icons text-secondary text-5xl">waves</span>
+                        </div>
+                        <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-black text-slate-900 dark:text-white max-w-5xl mx-auto uppercase leading-tight">
+                            Our goal is to wholeheartedly see the Jewish person reach complete healing
+                        </h1>
+                        <div class="mt-12 flex justify-center">
+                            <div class="h-1 w-24 bg-primary rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="absolute right-0 bottom-0 opacity-10 pointer-events-none">
+                        <svg class="text-primary" fill="currentColor" height="400" viewBox="0 0 100 100" width="400">
+                            <path d="M10,50 Q25,20 40,50 T70,50 T100,50" fill="none" stroke="currentColor" stroke-width="2"></path>
+                        </svg>
+                    </div>
+                </section>
+
+                <section class="py-24 bg-white dark:bg-slate-900">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="grid md:grid-cols-2 gap-16 items-start">
+                            <div class="space-y-8">
+                                <div class="flex items-center gap-4">
+                                    <span class="material-icons text-primary text-4xl">history_edu</span>
+                                    <h2 class="font-display text-3xl font-bold uppercase">History & Approach</h2>
+                                </div>
+                                <div class="space-y-6 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    <p>
+                                        Founded on the principles of <i>Pikuach Nefesh</i>, ODEH has become a beacon of hope for the Jewish community facing complex medical challenges. We understand that every life is an entire world, and our approach reflects this profound responsibility.
+                                    </p>
+                                    <p>
+                                        Our process begins with a rigorous <strong>study of each case</strong>. We don't just look at files; we look at the person. Our team facilitates expert consultations with the world's leading specialists, ensuring that no stone is left unturned in the pursuit of healing.
+                                    </p>
+                                    <div class="p-6 bg-primary/10 border-l-4 border-primary rounded-r-lg">
+                                        <p class="italic font-serif">"We act as the bridge between medical complexity and the clarity needed for life-saving decisions."</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-12">
+                                <div>
+                                    <div class="flex items-center gap-3 mb-6">
+                                        <span class="bg-primary/10 p-2 rounded-lg text-primary">
+                                            <span class="material-icons">analytics</span>
+                                        </span>
+                                        <h3 class="font-display text-xl font-bold uppercase tracking-wide dark:text-white">Examples Before Transplant</h3>
+                                    </div>
+                                    <ul class="space-y-4">
+                                        <li class="flex items-start gap-3">
+                                            <span class="material-icons text-secondary mt-1">check_circle</span>
+                                            <span class="text-slate-600 dark:text-slate-400">Comprehensive identification of underlying causes and preventive measures.</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="material-icons text-secondary mt-1">check_circle</span>
+                                            <span class="text-slate-600 dark:text-slate-400">Rigorous doctor selection based on specific case history.</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="material-icons text-secondary mt-1">check_circle</span>
+                                            <span class="text-slate-600 dark:text-slate-400">Advanced diagnostics coordination to delay or prevent the need for transplant.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-3 mb-6">
+                                        <span class="bg-primary/10 p-2 rounded-lg text-primary">
+                                            <span class="material-icons">emergency</span>
+                                        </span>
+                                        <h3 class="font-display text-xl font-bold uppercase tracking-wide dark:text-white">When Transplant Is Needed</h3>
+                                    </div>
+                                    <ul class="space-y-4">
+                                        <li class="flex items-start gap-3">
+                                            <span class="material-icons text-secondary mt-1">check_circle</span>
+                                            <span class="text-slate-600 dark:text-slate-400">
+                                                <span class="font-bold text-slate-900 dark:text-white">Faster Appointments: </span>
+                                                Leveraging our network to expedite critical consultations.
+                                            </span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="material-icons text-secondary mt-1">check_circle</span>
+                                            <span class="text-slate-600 dark:text-slate-400">
+                                                <span class="font-bold text-slate-900 dark:text-white">Hospital Selection: </span>
+                                                Expert guidance on the best-equipped facilities.
+                                            </span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="material-icons text-secondary mt-1">check_circle</span>
+                                            <span class="text-slate-600 dark:text-slate-400">
+                                                <span class="font-bold text-slate-900 dark:text-white">Surgeon Matching: </span>
+                                                Identifying top-tier surgeons with the highest success rates.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-slate-900 text-white pt-20 pb-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-4 gap-12 mb-16 border-b border-white/10 pb-16">
+                        <div class="col-span-1 md:col-span-1">
+                        <div class="flex items-center gap-3 mb-6">
+                            <img src="images/footer-logo.png" alt="ODEH" class="h-10 dark:brightness-0 dark:invert" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="flex flex-col hidden">
+                                <div class="flex items-center gap-2">
+                                    <span class="hebrew-text text-xl font-black leading-none">אודה</span>
+                                    <span class="logo-font text-xl font-black leading-none">ODEH</span>
+                                </div>
+                                <span class="text-[9px] uppercase tracking-[0.15em] brand-primary font-semibold">ORGAN CONNECTIONS</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Extensive help for the patient with complex disease, organ failure, and transplantation.
+                        </p>
+                        <div class="flex gap-4">
+                            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all text-white" href="#">
+                                <span class="material-icons text-lg">facebook</span>
+                            </a>
+                            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all text-white" href="#">
+                                <span class="material-icons text-lg">public</span>
+                            </a>
+                            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all text-white" href="#">
+                                <span class="material-icons text-lg">email</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-6 uppercase tracking-widest text-xs">Navigation</h4>
+                        <ul class="space-y-4 text-slate-400 text-sm">
+                            <li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="specialties.html">Medical Approach</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="success.html">Success Stories</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="costs.html">Donate</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="become-living-donor.html">Become a Living Donor</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="schedule-donor-drive.html">Schedule a Donor Drive</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="become-involved.html">Become Involved</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-6 uppercase tracking-widest text-xs">Contact Us</h4>
+                        <ul class="space-y-4 text-slate-400 text-sm">
+                            <li class="flex items-center gap-3">
+                                <span class="material-icons brand-primary text-sm">call</span>
+                                845-666-6334
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-icons brand-primary text-sm">mail</span>
+                                help@odehorg.org
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="material-icons brand-primary text-sm mt-0.5">location_on</span>
+                                <div>
+                                    <p>Williamsburg<br>183 Wilson Street #495<br>Brooklyn, NY 11211</p>
+                                    <p class="mt-3">Monroe<br>15 Lemberg Court<br>Monroe, NY 10950</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-6 uppercase tracking-widest text-xs">Help Now</h4>
+                        <p class="text-slate-400 text-sm mb-6">Support our mission to save lives through transplant guidance and support.</p>
+                        <a href="costs.html" class="block text-center bg-secondary text-white font-bold py-3 rounded-lg hover:opacity-90 transition-all shadow-lg shadow-pink-500/20">
+                            Make a Donation
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row justify-between items-center text-slate-500 text-xs">
+                    <p>© 2024 ODEH. Organ & Donor Extensive Help. All rights reserved.</p>
+                    <div class="flex gap-6 mt-4 md:mt-0">
+                        <a class="hover:text-white" href="#">Privacy Policy</a>
+                        <a class="hover:text-white" href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
