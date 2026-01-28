@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Become Involved | ODEH</title>
+    <meta name="description" content="Get involved with ODEH by volunteering at drives, fundraising, or placing a pushka, and help support patients and donors facing complex transplant journeys.">
+    <link rel="canonical" href="https://odehorg.org/become-involved.html">
+    <meta property="og:site_name" content="ODEH">
+    <meta property="og:title" content="Become Involved | ODEH">
+    <meta property="og:description" content="Discover ways to support ODEH through volunteering, fundraising, and pushka placement to help patients and donors in need.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://odehorg.org/become-involved.html">
+    <link rel="icon" type="image/png" href="images/06.png">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Noto+Sans+Hebrew:wght@400;700&family=Michroma&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#7ba5d7",
+                        secondary: "#f27172",
+                        accent: "#7ba5d7",
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        serif: ["Inter", "sans-serif"],
+                        hebrew: ["Noto Sans Hebrew", "sans-serif"],
+                        logo: ["Inter", "sans-serif"],
+                        brand: ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hebrew-text { font-family: 'Noto Sans Hebrew', sans-serif; font-weight: 700; }
+        .logo-font { font-family: 'Inter', sans-serif; font-weight: 900; letter-spacing: 0.05em; }
+        .brand-primary { color: #7ba5d7; }
+        .brand-secondary { color: #f27172; }
+        .glass-effect { backdrop-filter: blur(12px); background-color: rgba(255, 255, 255, 0.8); }
+        .dark .glass-effect { background-color: rgba(15, 23, 42, 0.8); }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <nav class="sticky top-0 z-50 glass-effect border-b border-slate-200 dark:border-slate-800 transition-all" id="header">
+            <div class="w-full px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="images/logo.png" alt="ODEH - Organ & Donor Extensive Help" class="h-12 dark:brightness-0 dark:invert" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="flex flex-col hidden">
+                            <div class="flex items-center gap-2">
+                                <span class="hebrew-text text-2xl font-black leading-none dark:text-white">אודה</span>
+                                <span class="logo-font text-2xl font-black leading-none dark:text-white">ODEH</span>
+                            </div>
+                            <span class="text-[10px] uppercase tracking-[0.15em] brand-primary font-semibold">ORGAN CONNECTIONS</span>
+                        </div>
+                    </a>
+
+                    <div class="hidden lg:flex items-center space-x-6 text-sm font-semibold uppercase tracking-wider">
+                        <a href="index.html" class="nav-link transition-colors hover:text-primary text-slate-600 dark:text-slate-300">Home</a>
+                        <a href="about.html" class="nav-link transition-colors hover:text-primary text-slate-600 dark:text-slate-300">About Us</a>
+                        <a href="specialties.html" class="nav-link transition-colors hover:text-primary text-slate-600 dark:text-slate-300">Our Specialties</a>
+                        <a href="success.html" class="nav-link transition-colors hover:text-primary text-slate-600 dark:text-slate-300">Success Stories</a>
+                        <a href="costs.html" class="nav-link transition-colors hover:text-primary text-slate-600 dark:text-slate-300">Donate</a>
+                        <a href="become-living-donor.html" class="nav-link transition-colors hover:text-primary text-slate-600 dark:text-slate-300">Become a Living Donor</a>
+                        <a href="schedule-donor-drive.html" class="nav-link transition-colors hover:text-primary text-slate-600 dark:text-slate-300">Schedule a Donor Drive</a>
+                        <a href="become-involved.html" class="nav-link transition-colors hover:text-primary text-primary border-b-2 border-primary pb-1">Become Involved</a>
+                        <div class="flex items-center gap-4 ml-4 pl-4 border-l border-slate-200 dark:border-slate-700">
+                            <a href="contact.html" class="bg-primary hover:opacity-90 text-white px-5 py-2.5 rounded-full transition-all shadow-lg" style="box-shadow: 0 10px 15px -3px rgba(123, 165, 215, 0.3);">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <button class="lg:hidden p-2 text-slate-600 dark:text-slate-300" onclick="toggleMobileMenu()">
+                        <span class="material-icons" id="menu-icon">menu</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Medical Guidance Stripe -->
+            <div class="bg-secondary text-white text-xs sm:text-sm text-center py-2 px-4">
+                <span class="font-semibold tracking-widest uppercase">Medical Guidance</span>
+                <span class="mx-2">|</span>
+                <span>Call <a href="tel:18456660334" class="underline font-semibold">845-666-ODEH (6334)</a></span>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="lg:hidden hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 p-4 space-y-4" id="mobile-menu">
+                <a href="index.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">Home</a>
+                <a href="about.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">About Us</a>
+                <a href="specialties.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">Specialties</a>
+                <a href="success.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">Success Stories</a>
+                <a href="costs.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">Donate</a>
+                <a href="become-living-donor.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">Become a Living Donor</a>
+                <a href="schedule-donor-drive.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">Schedule a Donor Drive</a>
+                <a href="become-involved.html" class="block text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200" onclick="closeMobileMenu()">Become Involved</a>
+                <div class="pt-4 border-t border-slate-100 dark:border-slate-800 flex justify-between items-center">
+                    <a href="contact.html" class="bg-primary text-white px-6 py-2 rounded-full w-full text-center">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="flex-grow">
+            <div class="animate-in fade-in duration-700">
+                <section class="py-16 md:py-24 bg-gradient-to-b from-blue-50 to-white dark:from-slate-900 dark:to-background-dark">
+                    <div class="max-w-4xl mx-auto px-4 text-center">
+                        <span class="inline-block py-1 px-3 rounded-full bg-accent/10 text-accent text-xs font-bold tracking-widest uppercase mb-4">Become Involved</span>
+                        <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight dark:text-white">Stand With Patients and Donors</h1>
+                        <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 font-light leading-relaxed">
+                            There are many ways to support ODEH beyond living donation. Volunteer, fundraise, or place a pushka in your home or business and help us bring hope to more families.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="max-w-6xl mx-auto px-4 pb-20 -mt-8">
+                    <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl border border-slate-100 dark:border-slate-800 p-8 md:p-12 space-y-10">
+                        <div class="grid gap-10 md:grid-cols-3">
+                            <div class="space-y-4">
+                                <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                                    <span class="material-icons">diversity_volunteer</span>
+                                </div>
+                                <h2 class="text-xl font-bold uppercase dark:text-white">Volunteer at Drives</h2>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm">
+                                    Help staff tables, greet participants, and distribute information at donor awareness events and community programs.
+                                </p>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                                    <span class="material-icons">volunteer_activism</span>
+                                </div>
+                                <h2 class="text-xl font-bold uppercase dark:text-white">Fundraising</h2>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm">
+                                    Organize a parlor meeting, campaign, or online fundraiser to support ODEH’s core services and patient assistance.
+                                </p>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                                    <span class="material-icons">savings</span>
+                                </div>
+                                <h2 class="text-xl font-bold uppercase dark:text-white">Pushka / Donation Box</h2>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm">
+                                    Place an ODEH pushka in your home, office, or store and dedicate small daily giving to life-saving work.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pt-8 border-t border-slate-100 dark:border-slate-800 grid lg:grid-cols-2 gap-10">
+                            <div>
+                                <h2 class="text-2xl font-bold uppercase mb-4 dark:text-white">Tell Us How You’d Like to Help</h2>
+                                <p class="text-slate-600 dark:text-slate-400 mb-4">
+                                    Choose one or more ways to get involved, and share any additional talents or resources you can offer.
+                                </p>
+                                <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-icons text-secondary text-sm mt-0.5">arrow_right</span>
+                                        <span>Volunteer at drives: logistics, setup, hospitality, translation, or outreach.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-icons text-secondary text-sm mt-0.5">arrow_right</span>
+                                        <span>Fundraising: host events, sponsor materials, or connect us with donors.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-icons text-secondary text-sm mt-0.5">arrow_right</span>
+                                        <span>Pushka: place a collection box in your home, shul, or business.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <form class="space-y-5" onsubmit="event.preventDefault();">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label class="block text-sm font-medium mb-2 dark:text-slate-300">Name</label>
+                                            <input type="text" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none dark:text-white" placeholder="Full name">
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium mb-2 dark:text-slate-300">Email</label>
+                                            <input type="email" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none dark:text-white" placeholder="you@example.com">
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label class="block text-sm font-medium mb-2 dark:text-slate-300">Phone</label>
+                                            <input type="tel" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none dark:text-white" placeholder="845-000-0000">
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium mb-2 dark:text-slate-300">City / Neighborhood</label>
+                                            <input type="text" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none dark:text-white" placeholder="Where you live or work">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium mb-2 dark:text-slate-300">How would you like to become involved?</label>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                                            <label class="flex items-center gap-2">
+                                                <input type="checkbox" class="rounded border-slate-300 text-primary focus:ring-primary">
+                                                <span>Volunteer at drives</span>
+                                            </label>
+                                            <label class="flex items-center gap-2">
+                                                <input type="checkbox" class="rounded border-slate-300 text-primary focus:ring-primary">
+                                                <span>Fundraising</span>
+                                            </label>
+                                            <label class="flex items-center gap-2">
+                                                <input type="checkbox" class="rounded border-slate-300 text-primary focus:ring-primary">
+                                                <span>Pushka / donation box</span>
+                                            </label>
+                                            <label class="flex items-center gap-2">
+                                                <input type="checkbox" class="rounded border-slate-300 text-primary focus:ring-primary">
+                                                <span>Other</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium mb-2 dark:text-slate-300">What else can you offer?</label>
+                                        <textarea class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none dark:text-white" rows="5" placeholder="Skills, connections, venues, professional expertise, or any other way you’d like to help."></textarea>
+                                    </div>
+                                    <button type="submit" class="w-full md:w-auto bg-primary hover:opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-all shadow-lg uppercase" style="box-shadow: 0 10px 15px -3px rgba(123, 165, 215, 0.3);">
+                                        Submit
+                                    </button>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">
+                                        Someone from ODEH will reach out to discuss opportunities that fit your schedule and strengths.
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-slate-900 text-white pt-20 pb-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-4 gap-12 mb-16 border-b border-white/10 pb-16">
+                        <div class="col-span-1 md:col-span-1">
+                        <div class="flex items-center gap-3 mb-6">
+                            <img src="images/footer-logo.png" alt="ODEH" class="h-10 dark:brightness-0 dark:invert" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="flex flex-col hidden">
+                                <div class="flex items-center gap-2">
+                                    <span class="hebrew-text text-xl font-black leading-none">אודה</span>
+                                    <span class="logo-font text-xl font-black leading-none">ODEH</span>
+                                </div>
+                                <span class="text-[9px] uppercase tracking-[0.15em] brand-primary font-semibold">ORGAN CONNECTIONS</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Extensive help for the patient with complex disease, organ failure, and transplantation.
+                        </p>
+                        <div class="flex gap-4">
+                            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all text-white" href="#">
+                                <span class="material-icons text-lg">facebook</span>
+                            </a>
+                            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all text-white" href="#">
+                                <span class="material-icons text-lg">public</span>
+                            </a>
+                            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all text-white" href="#">
+                                <span class="material-icons text-lg">email</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-6 uppercase tracking-widest text-xs">Navigation</h4>
+                        <ul class="space-y-4 text-slate-400 text-sm">
+                            <li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="specialties.html">Medical Approach</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="success.html">Success Stories</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="costs.html">Donate</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="become-living-donor.html">Become a Living Donor</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="schedule-donor-drive.html">Schedule a Donor Drive</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="become-involved.html">Become Involved</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-6 uppercase tracking-widest text-xs">Contact Us</h4>
+                        <ul class="space-y-4 text-slate-400 text-sm">
+                            <li class="flex items-center gap-3">
+                                <span class="material-icons brand-primary text-sm">call</span>
+                                845-666-6334
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-icons brand-primary text-sm">mail</span>
+                                help@odehorg.org
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="material-icons brand-primary text-sm mt-0.5">location_on</span>
+                                <div>
+                                    <p>Williamsburg<br>183 Wilson Street #495<br>Brooklyn, NY 11211</p>
+                                    <p class="mt-3">Monroe<br>15 Lemberg Court</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-6 uppercase tracking-widest text-xs">Help Now</h4>
+                        <p class="text-slate-400 text-sm mb-6">Support our mission to save lives through transplant guidance and support.</p>
+                        <a href="costs.html" class="block text-center bg-secondary text-white font-bold py-3 rounded-lg hover:opacity-90 transition-all shadow-lg shadow-pink-500/20">
+                            Make a Donation
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row justify-between items-center text-slate-500 text-xs">
+                    <p>© 2024 ODEH. Organ & Donor Extensive Help. All rights reserved.</p>
+                    <div class="flex gap-6 mt-4 md:mt-0">
+                        <a class="hover:text-white" href="#">Privacy Policy</a>
+                        <a class="hover:text-white" href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
+
