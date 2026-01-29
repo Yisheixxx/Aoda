@@ -1,5 +1,10 @@
+# ODEH - Organ & Donor Extensive Help
+# https://odehorg.org
+
 User-agent: *
 Allow: /
 
+# Sitemap (helps search engines discover all pages)
 Sitemap: https://odehorg.org/sitemap.xml
 
+# Crawl-delay is not supported by Google; omit for normal crawling.
